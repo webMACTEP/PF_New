@@ -145,7 +145,7 @@ jQuery(document).ready(function ($) {
 
 
    // Получаем блок, в котором находится анимация
-   const block = document.querySelector('.animation2');
+   const block1 = document.querySelector('.animation2');
 
    // Создаем Timeline для анимации
    const tl1 = gsap.timeline({ delay: 1, paused: true });
@@ -156,26 +156,28 @@ jQuery(document).ready(function ($) {
 
    // Функция для проверки, виден ли блок на экране
    function isBlockVisible() {
-      const rect = block.getBoundingClientRect();
+      const rect = block1.getBoundingClientRect();
       return rect.top < window.innerHeight && rect.bottom >= 0;
    }
 
+   let animationEnabled = true;
+
    // Функция для проигрывания анимации, если блок виден на экране
    function playAnimation() {
-      if (isBlockVisible()) {
+      if (isBlockVisible() && animationEnabled) {
          tl1.play();
          tl2.play();
       }
-      else {
-         tl1.reverse();
-         tl2.reverse();
-         tl3.reverse();
-         tl4.reverse();
-         tl5.reverse();
-         tlbutt.reverse();
-         $('.buttn').removeClass('active');
-         $('.button-01').addClass('active');
-      }
+      // else {
+      //    tl1.reverse();
+      //    tl2.reverse();
+      //    tl3.reverse();
+      //    tl4.reverse();
+      //    tl5.reverse();
+      //    tlbutt.reverse();
+      //    $('.buttn').removeClass('active');
+      //    $('.button-01').addClass('active');
+      // }
    }
 
    // Проигрываем анимацию при загрузке страницы, если блок сразу виден на экране
@@ -231,6 +233,7 @@ jQuery(document).ready(function ($) {
       tl1.play();
       tl2.play();
       tlscrl1.play();
+      //animationEnabled = true;
    }
    function handleButtonClick2() {
       // Останавливаем текущую анимацию
@@ -244,6 +247,8 @@ jQuery(document).ready(function ($) {
       tlscrl2.play();
       gsap.to('.element', { duration: 1, x: '+=100' });
 
+      //animationEnabled = false;
+
    }
    function handleButtonClick3() {
       // Останавливаем текущую анимацию
@@ -255,6 +260,7 @@ jQuery(document).ready(function ($) {
       tl4.play();
       tlbutt.play();
       tlscrl3.play();
+      //animationEnabled = false;
 
    }
    function handleButtonClick4() {
@@ -266,6 +272,7 @@ jQuery(document).ready(function ($) {
       // Запускаем новую анимацию
       tl5.play();
       tlscrl4.play();
+      //animationEnabled = false;
 
    }
 
@@ -278,7 +285,7 @@ jQuery(document).ready(function ($) {
    $('.buttn').click(function () {
       if ($(this).hasClass('active') == false) {
          $('.buttn').removeClass('active');
-
+         animationEnabled = false;
          $(this).addClass('active');
       } else {
          $(this).removeClass('active');
