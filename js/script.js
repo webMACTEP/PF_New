@@ -43,7 +43,18 @@ jQuery(document).ready(function ($) {
 
       currentSlide.classList.remove('active');
       prevSlide.classList.add('active');
+
+      if (prevIndex === 0) {
+         animateSlide1();
+      }
+      if (prevIndex === 1) {
+         animateSlide2();
+      }
+      if (prevIndex === 2) {
+         animateSlide3();
+      }
    }
+
 
    nextButton.addEventListener('click', nextSlide);
    prevButton.addEventListener('click', prevSlide);
@@ -81,6 +92,7 @@ jQuery(document).ready(function ($) {
       const slideCard6 = slideContent.querySelector('.card-6');
       const slidePag1 = document.querySelector('.circ-01');
       const slidePag2 = document.querySelector('.circ-02');
+      const slidePag3 = document.querySelector('.circ-03');
 
       gsap.timeline({ delay: 0.5 })
          .from(slideTitle, { opacity: 0, x: -50 })
@@ -89,6 +101,7 @@ jQuery(document).ready(function ($) {
          .from(slideCard5, { opacity: 0, y: 50 }, '-=0.3')
          .to(slidePag1, { x: 20, duration: 1, ease: 'power2.inOut' }, '-=1')
          .to(slidePag2, { x: -20, duration: 1, ease: 'power2.inOut' }, '-=1')
+         .to(slidePag3, { x: 0, duration: 1, ease: 'power2.inOut' }, '-=1')
          .from(slideCard6, { opacity: 0, y: 50 }, '-=0.4');
    }
 
@@ -101,12 +114,14 @@ jQuery(document).ready(function ($) {
       const slideChat = slideContent.querySelector('.chat');
       const slideChatWind = slideContent.querySelector('.mess-win');
       const slidePag1 = document.querySelector('.circ-01');
+      const slidePag2 = document.querySelector('.circ-02');
       const slidePag3 = document.querySelector('.circ-03');
 
       gsap.timeline({ delay: 0.5 })
          .from(slideTitle, { opacity: 0, x: -50 })
          .from(slideChatWind, { opacity: 0, y: 100 })
          .to(slidePag1, { x: 40, duration: 1, ease: 'power2.inOut' }, '-=1')
+         .to(slidePag2, { x: -20, duration: 1, ease: 'power3.inOut' }, '-=1')
          .to(slidePag3, { x: -20, duration: 1, ease: 'power3.inOut' }, '-=1')
          .from(slideParagraph, { opacity: 0, y: 50 }, '-=0.2');
 
