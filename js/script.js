@@ -183,16 +183,6 @@ jQuery(document).ready(function ($) {
          tl1.play();
          tl2.play();
       }
-      // else {
-      //    tl1.reverse();
-      //    tl2.reverse();
-      //    tl3.reverse();
-      //    tl4.reverse();
-      //    tl5.reverse();
-      //    tlbutt.reverse();
-      //    $('.buttn').removeClass('active');
-      //    $('.button-01').addClass('active');
-      // }
    }
 
    // Проигрываем анимацию при загрузке страницы, если блок сразу виден на экране
@@ -226,17 +216,6 @@ jQuery(document).ready(function ($) {
    const tlbutt = gsap.timeline({ paused: true });
    tlbutt.to('.buttn', { duration: 1, y: -270 });
 
-   // const tlscrl1 = gsap.timeline({ paused: true });
-   // tlscrl1.to('.scrll', { duration: 1, y: 0 });
-
-   // const tlscrl2 = gsap.timeline({ paused: true });
-   // tlscrl2.to('.scrll', { duration: 1, y: 180 });
-
-   // const tlscrl3 = gsap.timeline({ paused: true });
-   // tlscrl3.to('.scrll', { duration: 1, y: 360 });
-
-   // const tlscrl4 = gsap.timeline({ paused: true });
-   // tlscrl4.to('.scrll', { duration: 1, y: 540 });
 
    // Функция для обработки нажатия на кнопку
    function handleButtonClick1() {
@@ -248,7 +227,6 @@ jQuery(document).ready(function ($) {
       tl1.play();
       tl2.play();
       tlscrl1.play();
-      //animationEnabled = true;
    }
    function handleButtonClick2() {
       // Останавливаем текущую анимацию
@@ -262,7 +240,6 @@ jQuery(document).ready(function ($) {
       tlscrl2.play();
       gsap.to('.element', { duration: 1, x: '+=100' });
 
-      //animationEnabled = false;
 
    }
    function handleButtonClick3() {
@@ -275,7 +252,6 @@ jQuery(document).ready(function ($) {
       tl4.play();
       tlbutt.play();
       tlscrl3.play();
-      //animationEnabled = false;
 
    }
    function handleButtonClick4() {
@@ -287,7 +263,6 @@ jQuery(document).ready(function ($) {
       // Запускаем новую анимацию
       tl5.play();
       tlscrl4.play();
-      //animationEnabled = false;
 
    }
 
@@ -310,6 +285,7 @@ jQuery(document).ready(function ($) {
       return false;
    });
 
+   //////////////////////////////////////////////////////
 
 });
 

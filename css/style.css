@@ -663,8 +663,58 @@ h1 {
   color: #ffffff;
 }
 
-.advantages {
+.programm {
   background: #ffffff;
   border-radius: 70px;
   padding: 60px 100px 80px;
+}
+
+.programm p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  /* or 32px */
+  /* update/black 100% */
+  color: #1f1f25;
+}
+
+.programm h3 {
+  margin: 0px 0px 10px 0px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  /* or 36px */
+  /* update/black 100% */
+  color: #1f1f25;
+}
+
+.programm .item {
+  margin: 0px 0px 20px 0px;
+  background: #f0f0f0;
+  border-radius: 30px;
+  padding: 41px 44px;
+}
+
+.programm .info {
+  max-width: 600px;
+}
+
+.programm .wrapper {
+  gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.programm h2 {
+  margin: 0px 0px 60px 0px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  /* or 58px */
+  letter-spacing: 0.01em;
+  color: #1f1f25;
 }
