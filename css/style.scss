@@ -489,6 +489,9 @@ h1 {
    border-radius: 70px;
 }
 .programm {
+   .video {
+      cursor: pointer;
+   }
    p {
       font-weight: 400;
       font-size: 20px;
@@ -500,7 +503,7 @@ h1 {
       color: #1f1f25;
    }
    h3 {
-      margin: 0px 0px 10px 0px;
+      margin: 0px 0px 8px 0px;
       font-weight: 600;
       font-size: 28px;
       line-height: 130%;
@@ -514,7 +517,7 @@ h1 {
       margin: 0px 0px 20px 0px;
       background: #f0f0f0;
       border-radius: 30px;
-      padding: 41px 44px;
+      padding: 42px 44px;
    }
    .info {
       max-width: 600px;
@@ -538,4 +541,79 @@ h1 {
    background: #ffffff;
    border-radius: 70px;
    padding: 60px 100px 80px;
+}
+.support {
+   p {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 160%;
+      /* or 27px */
+
+      color: #000000;
+
+      opacity: 0.9;
+   }
+   h3 {
+      margin: 16px 0px 16px 0px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+      /* or 29px */
+
+      color: #000000;
+      max-width: 280px;
+   }
+   .item {
+      padding: 24px;
+      width: 400px;
+      height: 400px;
+      background: #ffffff;
+      border-radius: 30px;
+      &.center {
+         h3 {
+            margin: 0px 0px 0px 0px;
+            text-align: center;
+            color: #ffffff;
+         }
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         background: none;
+         border: 1px solid #ffffff;
+      }
+   }
+   .wrapper {
+      flex-wrap: wrap;
+      gap: 20px;
+      display: flex;
+      justify-content: space-between;
+   }
+   .subtitle {
+      margin: 0px 0px 50px 0px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 160%;
+      /* identical to box height, or 45px */
+
+      /* update / white 100% */
+
+      color: #ffffff;
+   }
+   h2 {
+      margin: 0px 0px 20px 0px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      /* identical to box height, or 58px */
+
+      letter-spacing: 0.01em;
+
+      /* update / white 100% */
+
+      color: #ffffff;
+   }
+   padding: 60px 0px 80px 0px;
+   background: linear-gradient(146.84deg, #92cf97 0.01%, #6f9d72 90.48%);
+   border-radius: 70px;
 }

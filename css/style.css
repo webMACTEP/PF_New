@@ -669,6 +669,10 @@ h1 {
   padding: 60px 100px 80px;
 }
 
+.programm .video {
+  cursor: pointer;
+}
+
 .programm p {
   font-weight: 400;
   font-size: 20px;
@@ -679,7 +683,7 @@ h1 {
 }
 
 .programm h3 {
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 8px 0px;
   font-weight: 600;
   font-size: 28px;
   line-height: 130%;
@@ -692,7 +696,7 @@ h1 {
   margin: 0px 0px 20px 0px;
   background: #f0f0f0;
   border-radius: 30px;
-  padding: 41px 44px;
+  padding: 42px 44px;
 }
 
 .programm .info {
@@ -717,4 +721,91 @@ h1 {
   /* or 58px */
   letter-spacing: 0.01em;
   color: #1f1f25;
+}
+
+.support {
+  padding: 60px 0px 80px 0px;
+  background: linear-gradient(146.84deg, #92cf97 0.01%, #6f9d72 90.48%);
+  border-radius: 70px;
+}
+
+.support p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 160%;
+  /* or 27px */
+  color: #000000;
+  opacity: 0.9;
+}
+
+.support h3 {
+  margin: 16px 0px 16px 0px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+  color: #000000;
+  max-width: 280px;
+}
+
+.support .item {
+  padding: 24px;
+  width: 400px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+.support .item.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border: 1px solid #ffffff;
+}
+
+.support .item.center h3 {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.support .wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.support .subtitle {
+  margin: 0px 0px 50px 0px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 160%;
+  /* identical to box height, or 45px */
+  /* update / white 100% */
+  color: #ffffff;
+}
+
+.support h2 {
+  margin: 0px 0px 20px 0px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+  letter-spacing: 0.01em;
+  /* update / white 100% */
+  color: #ffffff;
 }
