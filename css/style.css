@@ -1360,3 +1360,130 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.reviews {
+  padding: 60px 0px 80px 0px;
+  background: #ffffff;
+  border-radius: 70px;
+}
+
+.reviews .butt-more {
+  cursor: pointer;
+  width: 220px;
+  height: 52px;
+  margin: 40px auto 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  /* update / white 100% */
+  color: #ffffff;
+  background: #1f1f25;
+  border-radius: 36px;
+}
+
+.reviews .rv-butt {
+  cursor: pointer;
+}
+
+.reviews .wrapper {
+  margin: 20px 0px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.reviews .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.reviews .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(134.39deg, rgba(112, 158, 226, 0.8) 1.09%, rgba(90, 108, 201, 0.8) 100.04%);
+  border-radius: 30px;
+  color: #ffffff;
+  width: 400px;
+  height: 400px;
+  padding: 24px;
+}
+
+.reviews .item .text {
+  margin: 20px 0px 0px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.reviews .item:nth-child(even) {
+  background: linear-gradient(134.39deg, rgba(226, 121, 112, 0.8) 1.09%, rgba(201, 99, 90, 0.8) 100.04%);
+}
+
+.reviews .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews .stars img {
+  margin: 0px 8px 0px 16px;
+}
+
+.reviews .rait {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  /* identical to box height, or 42px */
+  letter-spacing: 0.01em;
+  color: #062526;
+}
+
+.reviews .sub {
+  margin: 20px 0px 40px 0px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 160%;
+  color: #1f1f25;
+}
+
+.reviews h2 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  /* update/black 100% */
+  color: #1f1f25;
+}

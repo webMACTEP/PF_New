@@ -1096,3 +1096,98 @@ h1 {
    }
    padding: 24px 0px;
 }
+.reviews {
+   .butt-more {
+      cursor: pointer;
+      width: 220px;
+      height: 52px;
+      margin: 40px auto 0px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: 0.01em;
+
+      /* update / white 100% */
+
+      color: #ffffff;
+      background: #1f1f25;
+      border-radius: 36px;
+   }
+   .rv-butt {
+      cursor: pointer;
+   }
+   .wrapper {
+      margin: 20px 0px 40px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+   .title {
+      display: flex;
+      gap: 40px;
+   }
+   .item {
+      display: flex;
+      flex-direction: column;
+      .text {
+         margin: 20px 0px 0px 0px;
+         flex-grow: 1;
+      }
+      &:nth-child(even) {
+         background: linear-gradient(134.39deg, rgba(226, 121, 112, 0.8) 1.09%, rgba(201, 99, 90, 0.8) 100.04%);
+      }
+      background: linear-gradient(134.39deg, rgba(112, 158, 226, 0.8) 1.09%, rgba(90, 108, 201, 0.8) 100.04%);
+      border-radius: 30px;
+      color: #ffffff;
+      width: 400px;
+      height: 400px;
+      padding: 24px;
+   }
+   .items {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+   }
+   .stars {
+      display: flex;
+      align-items: center;
+      img {
+         margin: 0px 8px 0px 16px;
+      }
+   }
+
+   .rait {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 130%;
+      /* identical to box height, or 42px */
+
+      letter-spacing: 0.01em;
+
+      color: #062526;
+   }
+   .sub {
+      margin: 20px 0px 40px 0px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 160%;
+
+      color: #1f1f25;
+   }
+   h2 {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 130%;
+      letter-spacing: 0.01em;
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+   }
+   padding: 60px 0px 80px 0px;
+   background: #ffffff;
+   border-radius: 70px;
+}
