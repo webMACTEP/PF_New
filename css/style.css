@@ -1097,3 +1097,42 @@ h1 {
   /* update / white 100% */
   color: #ffffff;
 }
+
+.faq.functions {
+  background: #fff;
+}
+
+.faq.functions .answer-js {
+  opacity: 1;
+  color: #1f1f25;
+}
+
+.faq.functions .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq.functions .info img {
+  max-width: 620px;
+}
+
+.faq.functions .question-js::after {
+  background: url("../img/answer-b.svg") no-repeat;
+}
+
+.faq.functions .question-js {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.faq.functions h2,
+.faq.functions .question-js,
+.faq.functions .subtitle {
+  color: #1f1f25;
+}
