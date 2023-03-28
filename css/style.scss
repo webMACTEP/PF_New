@@ -1036,3 +1036,67 @@ h1 {
    background: #ffffff;
    border-radius: 70px;
 }
+.footer {
+   .right {
+      display: flex;
+      gap: 50px;
+   }
+   .soc {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin: 16px 0px 0px 0px;
+   }
+   .enter {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: 0.01em;
+      color: #1f1f25;
+      background: #ffffff;
+      /* update / white 100% */
+
+      border: 1px solid #ffffff;
+      border-radius: 36px;
+      padding: 10px 32px;
+   }
+   ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      a {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 120%;
+         letter-spacing: 0.01em;
+
+         /* update/gray */
+
+         color: #d5d5d5;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+   span {
+      display: block;
+      margin: 20px 0px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: 0.01em;
+
+      /* update/gray */
+
+      color: #d5d5d5;
+   }
+   .wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+   padding: 24px 0px;
+}
