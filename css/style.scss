@@ -909,3 +909,130 @@ h1 {
    }
    background: #fff;
 }
+.quiz02 {
+   .nd-button {
+      background: #2261eb;
+      border-radius: 24px;
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 41px 28px 48px;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 120%;
+      color: #ffffff;
+   }
+   .next {
+      p {
+         a {
+            color: #6688e1;
+         }
+         max-width: 360px;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 150%;
+         /* or 24px */
+
+         letter-spacing: 0.01em;
+
+         /* update / black_80% */
+
+         color: rgba(31, 31, 37, 0.8);
+      }
+      display: flex;
+      gap: 40px;
+      align-items: center;
+   }
+   .input {
+      &.name {
+         width: 46%;
+      }
+      &.phone {
+         width: 46%;
+      }
+      &.comment {
+         width: 100%;
+      }
+      position: relative;
+
+      input {
+         padding: 16px 0px;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 150%;
+         /* identical to box height, or 30px */
+
+         letter-spacing: 0.01em;
+
+         /* update/gray */
+
+         color: #000;
+      }
+      label {
+         &::after {
+            content: attr(data-label) "";
+            display: block;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            /* identical to box height, or 24px */
+
+            letter-spacing: 0.01em;
+
+            /* update / black_80% */
+
+            color: rgba(31, 31, 37, 0.8);
+         }
+
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 150%;
+         /* identical to box height, or 24px */
+
+         letter-spacing: 0.01em;
+
+         /* update / black_80% */
+
+         color: rgba(31, 31, 37, 0.8);
+      }
+      border-bottom: 1px solid rgba(31, 31, 37, 0.8);
+   }
+
+   .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 70px;
+      justify-content: space-between;
+   }
+   .subtitle {
+      margin: 20px 0px 80px 0px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 160%;
+      /* identical to box height, or 45px */
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+   }
+   h2 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      /* or 58px */
+
+      letter-spacing: 0.01em;
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+      max-width: 850px;
+   }
+   padding: 60px 0px 80px 0px;
+   background: #ffffff;
+   border-radius: 70px;
+}
