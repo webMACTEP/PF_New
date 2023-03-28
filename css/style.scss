@@ -617,3 +617,53 @@ h1 {
    background: linear-gradient(146.84deg, #92cf97 0.01%, #6f9d72 90.48%);
    border-radius: 70px;
 }
+.integration {
+   p {
+      max-width: 554px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      /* or 29px */
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+   }
+   h3 {
+      margin: 40px 0px 8px 0px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+      /* identical to box height, or 29px */
+
+      letter-spacing: 0.01em;
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+   }
+   .info {
+      max-width: 660px;
+   }
+   h2 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      /* or 58px */
+
+      letter-spacing: 0.01em;
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+   }
+   .wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 58px;
+      align-items: center;
+   }
+   padding: 124px 0px 124px 0px;
+   background: #ffffff;
+   border-radius: 70px;
+}
