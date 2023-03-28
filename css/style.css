@@ -945,3 +945,79 @@ h1 {
   /* update / white 100% */
   color: #ffffff;
 }
+
+.articles {
+  padding: 60px 0px 80px 0px;
+  background: #ffffff;
+  border-radius: 70px;
+}
+
+.articles .butt-more {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  /* update / white 100% */
+  color: #ffffff;
+  margin: 40px auto 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 52px;
+  background: #1f1f25;
+  border-radius: 36px;
+}
+
+.articles a {
+  display: block;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.articles a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.articles .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.articles .subtitle {
+  margin: 20px 0px 60px 0px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+  /* identical to box height, or 45px */
+  /* update/black 100% */
+  color: #1f1f25;
+}
+
+.articles h2 {
+  max-width: 750px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  /* or 58px */
+  letter-spacing: 0.01em;
+  /* update/black 100% */
+  color: #1f1f25;
+}

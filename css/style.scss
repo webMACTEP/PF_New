@@ -742,3 +742,68 @@ h1 {
    background: linear-gradient(138.53deg, #ec6f66 2.79%, #f3a183 99.4%);
    border-radius: 70px;
 }
+.articles {
+   .butt-more {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: 0.01em;
+
+      /* update / white 100% */
+
+      color: #ffffff;
+      margin: 40px auto 0px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 52px;
+      background: #1f1f25;
+      border-radius: 36px;
+   }
+   a {
+      display: block;
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 30px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   .wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+   }
+   .subtitle {
+      margin: 20px 0px 60px 0px;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 160%;
+      /* identical to box height, or 45px */
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+   }
+   h2 {
+      max-width: 750px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      /* or 58px */
+
+      letter-spacing: 0.01em;
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+   }
+   padding: 60px 0px 80px 0px;
+   background: #ffffff;
+   border-radius: 70px;
+}
