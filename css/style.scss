@@ -667,3 +667,78 @@ h1 {
    background: #ffffff;
    border-radius: 70px;
 }
+.statistic {
+   p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      margin: 6px 0px 0px 0px;
+
+      /* update/black 100% */
+
+      color: #1f1f25;
+   }
+   .unit {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 130%;
+      /* identical to box height, or 73px */
+
+      letter-spacing: 0.01em;
+
+      color: #d36251;
+   }
+   span {
+      display: block;
+      font-weight: 700;
+      font-size: 140px;
+      line-height: 110%;
+
+      color: #d36251;
+   }
+   .item {
+      background: #ffffff;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 24px 48px;
+      width: 100%;
+      max-width: 610px;
+      min-height: 227px;
+   }
+   .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+   }
+   .subtitle {
+      text-align: center;
+      margin: 20px 0px 60px 0px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 160%;
+      /* or 51px */
+
+      /* update / white 100% */
+
+      color: #ffffff;
+   }
+   h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 130%;
+      /* identical to box height, or 73px */
+
+      letter-spacing: 0.01em;
+
+      /* update / white 100% */
+
+      color: #ffffff;
+   }
+   padding: 60px 0px 80px 0px;
+   background: linear-gradient(138.53deg, #ec6f66 2.79%, #f3a183 99.4%);
+   border-radius: 70px;
+}
