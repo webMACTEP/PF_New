@@ -1536,7 +1536,7 @@ h1 {
   border-radius: 24px;
 }
 
-.quiz01 .item {
+.quiz01 .q-item {
   position: relative;
   cursor: pointer;
   width: 270px;
@@ -1551,7 +1551,7 @@ h1 {
   border-radius: 30px;
 }
 
-.quiz01 .item.active::after {
+.quiz01 .q-item.active::after {
   content: "";
   position: absolute;
   left: 30px;
@@ -1562,7 +1562,7 @@ h1 {
   border-radius: 20px;
 }
 
-.quiz01 .item::before {
+.quiz01 .q-item::before {
   content: "";
   position: absolute;
   left: 25px;

@@ -300,6 +300,16 @@ jQuery(document).ready(function ($) {
       return false;
    });
 
+   ////////////////////////////////////////
+
+   $('.q-item').click(function () {
+
+      $(this).toggleClass('active');
+
+
+      return false;
+   });
+
 });
 
 
