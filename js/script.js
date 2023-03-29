@@ -420,7 +420,7 @@ jQuery(document).ready(function ($) {
       // Останавливаем текущую анимацию
       cctl1.pause().progress(0);
       cctl2.pause().progress(0);
-      ctl3.pause().progress(0);
+      cctl3.pause().progress(0);
       cctl5.pause().progress(0);
       // Запускаем новую анимацию
       cctl4.play();
