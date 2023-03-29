@@ -310,6 +310,21 @@ jQuery(document).ready(function ($) {
       return false;
    });
 
+   ////////////////////////////////////
+
+   const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+         if (entry.isIntersecting) {
+            // Запускаем анимацию при появлении блока на экране
+            gsap.to('.chat-dir', { delay: 3, duration: 1, y: -460, ease: 'power2.out' });
+         }
+      });
+   });
+
+   // Наблюдаем за блоком и добавляем его в список элементов для наблюдения
+   const block = document.querySelector('.anim');
+   observer.observe(block);
+
 });
 
 
