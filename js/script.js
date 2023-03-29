@@ -325,6 +325,142 @@ jQuery(document).ready(function ($) {
    const block = document.querySelector('.anim');
    observer.observe(block);
 
+
+
+
+   ///////////////////////////////////////
+
+
+
+
+   // Получаем блок, в котором находится анимация
+   const ccblock1 = document.querySelector('.cc-animation2');
+
+   // Создаем Timeline для анимации
+   const cctl1 = gsap.timeline({ delay: 1, paused: true });
+   const cctl2 = gsap.timeline({ delay: 2, paused: true });
+   cctl1.from('.ccin01', { duration: 2, opacity: 0, y: 100 });
+   cctl2.from('.ccin02', { duration: 2, opacity: 0, y: 100 })
+      .to('.ccscrll', { delay: -2, duration: 1, y: '+=0' });
+
+   // Функция для проверки, виден ли блок на экране
+   function ccisBlockVisible() {
+      const ccrect = ccblock1.getBoundingClientRect();
+      return ccrect.top < window.innerHeight && ccrect.bottom >= 0;
+   }
+
+   let ccanimationEnabled = true;
+
+   // Функция для проигрывания анимации, если блок виден на экране
+   function ccplayAnimation2() {
+      if (ccisBlockVisible() && ccanimationEnabled) {
+         cctl1.play();
+         cctl2.play();
+      }
+   }
+
+   // Проигрываем анимацию при загрузке страницы, если блок сразу виден на экране
+   //playAnimation();
+
+   // Добавляем обработчик события прокрутки экрана
+   window.addEventListener('scroll', ccplayAnimation2);
+
+
+
+
+   // Получаем кнопку для управления анимацией
+   const ccbutton1 = document.querySelector('.cc-button-01');
+   const ccbutton2 = document.querySelector('.cc-button-02');
+   const ccbutton3 = document.querySelector('.cc-button-03');
+   const ccbutton4 = document.querySelector('.cc-button-04');
+
+   // Создаем вторую Timeline для другой анимации
+   const cctl3 = gsap.timeline({ paused: true });
+   cctl3.from('.ccin03', { duration: 2, opacity: 0, y: 100 })
+      .to('.ccscrll', { delay: -2, duration: 1, y: '+=200', ease: 'power2.out' });
+
+   const cctl4 = gsap.timeline({ paused: true });
+   cctl4.from('.ccin04', { duration: 2, opacity: 0, y: 100 })
+      .to('.ccscrll', { delay: -2, duration: 1, y: '+=390', ease: 'power2.out' });
+
+   const cctl5 = gsap.timeline({ paused: true });
+   cctl5.from('.ccin05', { duration: 2, opacity: 0, y: 100 })
+      .to('.ccscrll', { delay: -2, duration: 1, y: '+=580', ease: 'power2.out' });
+
+   const cctlbutt = gsap.timeline({ paused: true });
+   cctlbutt.to('.buttn2', { duration: 1, y: -270 });
+
+
+   // Функция для обработки нажатия на кнопку
+   function cchandleButtonClick1() {
+      // Останавливаем текущую анимацию
+      cctl3.pause().progress(0);
+      cctl4.pause().progress(0);
+
+      // Запускаем новую анимацию
+      cctl1.play();
+      cctl2.play();
+      cctlscrl1.play();
+   }
+   function cchandleButtonClick2() {
+      // Останавливаем текущую анимацию
+      cctl1.pause().progress(0);
+      cctl2.pause().progress(0);
+      cctl4.pause().progress(0);
+      cctl5.pause().progress(0);
+      // Запускаем новую анимацию
+      cctl3.play();
+      cctlbutt.reverse();
+      cctlscrl2.play();
+      //gsap.to('.element', { duration: 1, x: '+=100' });
+
+
+   }
+   function cchandleButtonClick3() {
+      // Останавливаем текущую анимацию
+      cctl1.pause().progress(0);
+      cctl2.pause().progress(0);
+      ctl3.pause().progress(0);
+      cctl5.pause().progress(0);
+      // Запускаем новую анимацию
+      cctl4.play();
+      cctlbutt.play();
+      tlscrl3.play();
+
+   }
+   function cchandleButtonClick4() {
+      // Останавливаем текущую анимацию
+      cctl1.pause().progress(0);
+      cctl2.pause().progress(0);
+      cctl3.pause().progress(0);
+      cctl4.pause().progress(0);
+      // Запускаем новую анимацию
+      cctl5.play();
+      tlscrl4.play();
+
+   }
+
+   // Добавляем обработчик события клика на кнопку
+   ccbutton1.addEventListener('click', cchandleButtonClick1);
+   ccbutton2.addEventListener('click', cchandleButtonClick2);
+   ccbutton3.addEventListener('click', cchandleButtonClick3);
+   ccbutton4.addEventListener('click', cchandleButtonClick4);
+
+
+   $('.buttn2').click(function () {
+      if ($(this).hasClass('active') == false) {
+         $('.buttn2').removeClass('active');
+         ccanimationEnabled = false;
+         $(this).addClass('active');
+      } else {
+         $(this).removeClass('active');
+
+      }
+
+      return false;
+   });
+
+
 });
 
 

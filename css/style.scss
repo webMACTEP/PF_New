@@ -379,115 +379,6 @@ h1 {
    background: #fff;
    border-radius: 70px;
 }
-.possibilities {
-   .buttn {
-      cursor: pointer;
-      margin: 0px 0px 30px 0px;
-      p {
-         margin: 10px 0px 0px 0px;
-         font-weight: 400;
-         font-size: 20px;
-         line-height: 160%;
-         /* or 32px */
-
-         /* update/black 100% */
-
-         color: #1f1f25;
-
-         opacity: 0.8;
-      }
-      h3 {
-         font-weight: 600;
-         font-size: 28px;
-         line-height: 130%;
-         /* or 36px */
-
-         /* update/black 100% */
-
-         color: #1f1f25;
-      }
-      padding: 36px 40px;
-      background: #ffffff;
-      border-radius: 30px;
-   }
-   .scrll {
-      height: fit-content;
-   }
-   .animation2 {
-      width: 400px;
-      position: relative;
-      height: 817px;
-   }
-   .in05 {
-      position: absolute;
-      top: 170px;
-      left: -75px;
-   }
-   .in04 {
-      position: absolute;
-      top: 35px;
-      left: -75px;
-   }
-   .in03 {
-      position: absolute;
-      top: 190px;
-      left: -75px;
-   }
-   .in02 {
-      position: absolute;
-      top: 400px;
-      left: -75px;
-   }
-   .in01 {
-      position: absolute;
-      top: 50px;
-      left: -75px;
-   }
-   .buttn {
-      opacity: 0.3;
-      &.active {
-         opacity: 1;
-      }
-   }
-   .buttons {
-      max-width: 600px;
-      height: 817px;
-      overflow: hidden;
-   }
-   .wrapper {
-      display: flex;
-      justify-content: space-between;
-   }
-   .title {
-      p {
-         max-width: 1000px;
-         margin: 20px 0px 50px 0px;
-         font-weight: 500;
-         font-size: 28px;
-         line-height: 140%;
-         /* or 39px */
-
-         /* update / white 100% */
-
-         color: #ffffff;
-      }
-      h2 {
-         font-weight: 700;
-         font-size: 48px;
-         line-height: 120%;
-         /* identical to box height, or 58px */
-
-         letter-spacing: 0.01em;
-
-         /* update / white 100% */
-
-         color: #ffffff;
-      }
-   }
-   padding: 60px 100px 80px;
-   background: linear-gradient(146.84deg, #92cf97 0.01%, #6f9d72 90.48%);
-   border-radius: 70px;
-}
 .programm {
    .video {
       cursor: pointer;
@@ -1192,16 +1083,6 @@ h1 {
    background: #ffffff;
    border-radius: 70px;
 }
-.control {
-   .in02 {
-      top: 500px;
-      left: -66px;
-   }
-
-   padding: 60px 0px 80px 0px;
-   background: linear-gradient(135.9deg, #606c88 3.34%, #3f4c6b 97.78%);
-   border-radius: 70px;
-}
 .quiz01 {
    .anim {
       position: relative;
@@ -1317,5 +1198,188 @@ h1 {
    }
    padding: 60px 0px 80px 0px;
    background: linear-gradient(138.05deg, #9796f0 0%, #fbc7d4 97.55%);
+   border-radius: 70px;
+}
+.possibilities {
+   .buttn {
+      cursor: pointer;
+      margin: 0px 0px 30px 0px;
+      p {
+         margin: 10px 0px 0px 0px;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 160%;
+         /* or 32px */
+
+         /* update/black 100% */
+
+         color: #1f1f25;
+
+         opacity: 0.8;
+      }
+      h3 {
+         font-weight: 600;
+         font-size: 28px;
+         line-height: 130%;
+         /* or 36px */
+
+         /* update/black 100% */
+
+         color: #1f1f25;
+      }
+      padding: 36px 40px;
+      background: #ffffff;
+      border-radius: 30px;
+   }
+   .scrll {
+      height: fit-content;
+   }
+   .animation2 {
+      width: 400px;
+      position: relative;
+      height: 817px;
+   }
+   .in05 {
+      position: absolute;
+      top: 170px;
+      left: -75px;
+   }
+   .in04 {
+      position: absolute;
+      top: 35px;
+      left: -75px;
+   }
+   .in03 {
+      position: absolute;
+      top: 190px;
+      left: -75px;
+   }
+   .in02 {
+      position: absolute;
+      top: 400px;
+      left: -75px;
+   }
+   .in01 {
+      position: absolute;
+      top: 50px;
+      left: -75px;
+   }
+   .buttn {
+      opacity: 0.3;
+      &.active {
+         opacity: 1;
+      }
+   }
+   .buttons {
+      max-width: 600px;
+      height: 817px;
+      overflow: hidden;
+   }
+   .wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+   .title {
+      p {
+         max-width: 1000px;
+         margin: 20px 0px 50px 0px;
+         font-weight: 500;
+         font-size: 28px;
+         line-height: 140%;
+         /* or 39px */
+
+         /* update / white 100% */
+
+         color: #ffffff;
+      }
+      h2 {
+         font-weight: 700;
+         font-size: 48px;
+         line-height: 120%;
+         /* identical to box height, or 58px */
+
+         letter-spacing: 0.01em;
+
+         /* update / white 100% */
+
+         color: #ffffff;
+      }
+   }
+   padding: 60px 100px 80px;
+   background: linear-gradient(146.84deg, #92cf97 0.01%, #6f9d72 90.48%);
+   border-radius: 70px;
+}
+
+.control {
+   .ccin05 {
+      position: absolute;
+      top: 170px;
+      left: -75px;
+   }
+   .ccin04 {
+      position: absolute;
+      top: 35px;
+      left: -75px;
+   }
+   .ccin03 {
+      position: absolute;
+      top: 190px;
+      left: -75px;
+   }
+   .ccin02 {
+      position: absolute;
+      top: 400px;
+      left: -75px;
+   }
+   .ccin01 {
+      position: absolute;
+      top: 50px;
+      left: -75px;
+   }
+   .cc-animation2 {
+      position: relative;
+   }
+   .buttn2 {
+      opacity: 0.3;
+      &.active {
+         opacity: 1;
+      }
+      cursor: pointer;
+      margin: 0px 0px 30px 0px;
+      p {
+         margin: 10px 0px 0px 0px;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 160%;
+         /* or 32px */
+
+         /* update/black 100% */
+
+         color: #1f1f25;
+
+         opacity: 0.8;
+      }
+      h3 {
+         font-weight: 600;
+         font-size: 28px;
+         line-height: 130%;
+         /* or 36px */
+
+         /* update/black 100% */
+
+         color: #1f1f25;
+      }
+      padding: 36px 40px;
+      background: #ffffff;
+      border-radius: 30px;
+   }
+
+   .ccin02 {
+      top: 500px;
+      left: -66px;
+   }
+
+   padding: 60px 0px 80px 0px;
+   background: linear-gradient(135.9deg, #606c88 3.34%, #3f4c6b 97.78%);
    border-radius: 70px;
 }
